@@ -1,0 +1,25 @@
+# Terraform の作業フォルダ（provider の本体など）
+.terraform/
+
+# state ファイル（秘密情報が平文で入ることがある）
+*.tfstate
+*.tfstate.*
+
+# 変数ファイル（環境ごとの値や秘密情報が入りがち）
+*.tfvars
+*.tfvars.json
+
+# plan の結果ファイル
+*.tfplan
+
+# ログ・ローカル上書き
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# その他
+.env
+.DS_Store
